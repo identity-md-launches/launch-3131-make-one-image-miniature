@@ -1,0 +1,70 @@
+{
+  "status": "completed_with_documented_visual_limitations",
+  "outputs": [
+    {
+      "path": "artifacts/image.png",
+      "format": "PNG",
+      "mime_type": "image/png",
+      "width": 4800,
+      "height": 3600,
+      "aspect_ratio": "4:3",
+      "bit_depth_per_channel": 8,
+      "color_mode": "RGB",
+      "opaque": true,
+      "resolution_ppi": 300,
+      "bytes": 12298954,
+      "sha256": "800b312802aebcd963fda60afeaf1b1c5935fbfd6d93135e9258b78468ff6b03"
+    }
+  ],
+  "generation": {
+    "model": "google/nano-banana-2.1",
+    "image_count": 1,
+    "requested_resolution": "4K",
+    "requested_aspect_ratio": "4:3",
+    "source_dimensions": {
+      "width": 4800,
+      "height": 3584
+    },
+    "prompt_path": "prompt.txt",
+    "reference_url": "https://x.com/sergeantsref/status/2118851171087417639",
+    "midjourney_sref": "2553812497",
+    "midjourney_used": false,
+    "reference_access": "HTTP 403; used requester-provided visual description"
+  },
+  "export": {
+    "operation": "Add 8 white rows above and below the image for exact 4:3 dimensions",
+    "original_pixels_preserved": true,
+    "resampling": false
+  },
+  "visual_review": {
+    "method": "Direct agent inspection of generated PNG and final PNG",
+    "independent_certification": false,
+    "observed": [
+      "Single dachshund in left-facing profile",
+      "Long low body, long snout, four short legs in mid-stride",
+      "Separate hanging ear shape and lifted curved tail",
+      "Chunky blue ink shapes, dry-brush edges, and white stencil breaks",
+      "Centered subject with generous white margins",
+      "No visible outline, cast shadow, text, scenery, or additional color family"
+    ],
+    "unmet_visual_requirements": [
+      "Subtle generated raster color variation remains in the blue fill and white field; the pixels are not limited to one exact blue and pure white.",
+      "The ear has a white separating gap, but lacks broad white stencil cuts across its interior."
+    ],
+    "unverified_visual_requirements": [
+      "Exact match to Midjourney style reference 2553812497: Midjourney was unavailable and the reference post could not be fetched."
+    ]
+  },
+  "validation": {
+    "png_signature": "passed",
+    "all_chunk_crc_checks": "passed",
+    "complete_decompression": "passed",
+    "decoded_scanline_size": "passed",
+    "exact_4_to_3_ratio": "passed",
+    "expected_dimensions": "passed",
+    "original_pixels_preserved": "passed",
+    "white_padding": "passed",
+    "opaque_rgb": "passed",
+    "resolution_metadata": "passed"
+  }
+}
